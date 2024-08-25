@@ -61,6 +61,11 @@ using namespace std;
 // }
 
 ////////////////////////////////////  Without tem  //////////////////////
+//  This can be said as formula for swap
+//     x = x+y;
+//     y = x-y;
+//     x = x-y;
+
 // void swap(int& x, int& y){
 //     x = x+y;
 //     y = x-y;
@@ -74,4 +79,23 @@ using namespace std;
 //     swap(x,y);
 //     cout<<x<<" "<< y<<"\n";
 // }
+
+
+// ///////////////////////////////// Using Pointers  ///////////////////////// //
+//  & shares address
+//  * go to address and take value and change it or print it etc
+
+// void swap(int* x, int* y){
+//     *x = *x+*y;
+//     *y = *x-*y;
+//     *x = *x-*y;
+// }
+// int main(){
+//     int x = 2002;
+//     int y = 4004;
+//     cout<<x<<" "<< y<<"\n";
+//     swap(&x,&y);
+//     cout<<x<<" "<< y<<"\n";
+// }
+
 
