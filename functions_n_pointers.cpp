@@ -84,6 +84,14 @@ using namespace std;
 // ///////////////////////////////// Using Pointers  ///////////////////////// //
 //  & shares address
 //  * go to address and take value and change it or print it etc
+// int main(){
+//     int x = 4;
+//     cout<<x<<"\n";
+//     cout<<&x<<"\n";
+//     int* p = &x;
+//     cout<<p<<"\n";
+//     cout<<*p<<"\n";
+// }
 
 // void swap(int* x, int* y){
 //     *x = *x+*y;

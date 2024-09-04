@@ -72,4 +72,53 @@ using namespace std;
 ////////////////////////////////////// similarly multiple constructors are allowed //////////////////////
 
 
+//////////////////////////////////////  Function in function //////////////////////////////////
+// class Students{
+// public:
+//     string name;
+//     int roll;
+//     float gpa;
 
+//     Students(string name, int roll,float gpa){
+//         this->name = name;      // here first NAME is of CLASS and SECOND is of PARAMETER
+//         this->roll = roll;      
+//         this->gpa = gpa;       
+//     }
+
+//     void print(){
+//     cout<<"Name : "<<name<<"  Roll - "<<roll<<"  GPA = "<<gpa<<"\n";
+//     }
+// };
+// int main(){
+//     Students s1("Ali",33,8.8);
+//     Students s2("zaid", 34, 7.3);
+
+//     s1.print();
+//     s2.print();
+// }
+
+/////////////////////////////////////  Inheritance /////////////////////////////////////////////
+
+class scooty{ ////// parent class
+public:
+    int speed;
+    float miliage;
+private:
+    int bootspace;
+};
+class bike : public scooty{   //// clid class or derived class
+public:
+    int gears;
+
+void print(){
+    cout<<speed<<"\n"<<miliage<<"\n"<<gears<<"\n";
+}
+};
+int main(){
+    bike b1;
+    b1.speed = 20;
+    b1.miliage = 2000;
+    b1.gears = 6;
+
+    b1.print();
+}
